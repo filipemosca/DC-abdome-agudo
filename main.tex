@@ -1,0 +1,64 @@
+\documentclass[13pt]{beamer}
+%%%%%%%% tema e cor %%%%%%%%
+\mode<presentation> {
+\usetheme{Madrid}
+%\usecolortheme{albatross}
+}
+
+\input{config.tex}
+\title[Apresentação de DC]{Abdome agudo} 
+\author[FCM]{Filipe Mosca, Gabriel Lucas, Johnny Folle \\
+Prof. Bernardo Sabat} 
+
+\begin{document}
+
+\input{files/pre-slides.tex}
+
+%%%%%%%% slides %%%%%%%%
+\section{Identificação} 
+\input{files/identificacao.tex}
+
+\section{Queixa principal}
+\input{files/qp.tex}
+
+\section{História da doença atual}
+\input{files/hda.tex}
+
+\section{Interrogatório sintomatológico}
+\input{files/it.tex}
+
+\section{Antecedentes pessoais}
+\input{files/ap.tex}
+
+\section{Antecedentes familiares}
+\input{files/af.tex}
+
+\section{Exame físico}
+\input{files/ef.tex}
+
+\section{Discussão}
+\input{files/discussao.tex}
+
+\section{Exames complementares}
+\input{files/exames.tex}
+
+\section{Diagnóstico e tratamento}
+\input{files/tratamento.tex}
+
+%------------------------------------------------
+
+
+%------------------------------------------------
+%%%%%%%% referencias %%%%%%%%
+\nocite{*}
+\begin{frame}{Referências}
+\bibliographystyle{unsrt}
+\bibliography{ref.bib}
+\end{frame}
+
+
+%%%%%%%% repete primeiro slide %%%%%%%%
+\begin{frame}
+\titlepage 
+\end{frame}
+\end{document}
